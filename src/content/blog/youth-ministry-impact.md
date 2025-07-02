@@ -18,7 +18,7 @@ Youth ministry is more than just fun activities and games. It's about investing 
 
 ### Identity Formation
 Teenagers are asking crucial questions:
-- Who am I?
+- Quien soy Yo?
 - What is my purpose?
 - How do I fit in?
 
