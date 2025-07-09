@@ -15,6 +15,17 @@ export function formatDate(date, formatStr = "MMMM d, yyyy") {
   return format(dateObj, formatStr);
 }
 
+export function formatSpanishDate(date) {
+  if (!date) return "";
+
+  const dateObj = typeof date === "string" ? parseISO(date) : date;
+  const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
+  const fechaFormateada = new Intl.DateTimeFormat('es-ES', opciones).format(dateObj);
+
+  return fechaFormateada;
+}
+
+
 /**
  * Check if a date is in the future
  * @param {Date|string} date The date to check

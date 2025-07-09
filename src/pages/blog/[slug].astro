@@ -54,7 +54,7 @@ try {
 ---
 
 <BaseLayout
-  title={`${entry.data.title} - Blog - Church Name`}
+  title={`${entry.data.title} - Blog - Sozein`}
   description={entry.data.description}
   image={entry.data.image}
   type="article"
@@ -75,7 +75,7 @@ try {
     
     <!-- Social Sharing -->
     <div class="mt-12 py-6 border-t border-gray-200">
-      <h3 class="text-lg font-bold mb-4">Share This Post</h3>
+      <h3 class="text-lg font-bold mb-4">Comparte este post</h3>
       <div class="flex space-x-4">
         <a 
           href={`https://facebook.com/sharer/sharer.php?u=${Astro.url}`} 
@@ -89,7 +89,7 @@ try {
           </svg>
         </a>
         
-        <a 
+        <!-- <a 
           href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(entry.data.title)}&url=${Astro.url}`} 
           target="_blank" 
           rel="noopener noreferrer"
@@ -99,9 +99,9 @@ try {
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
             <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.03 10.03 0 01-3.127 1.184 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
           </svg>
-        </a>
+        </a> -->
         
-        <a 
+        <!-- <a 
           href={`mailto:?subject=${encodeURIComponent(entry.data.title)}&body=${encodeURIComponent(`I thought you might be interested in this article: ${Astro.url}`)}`} 
           class="text-gray-600 hover:text-red-500 transition-colors"
           aria-label="Share via Email"
@@ -109,7 +109,7 @@ try {
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
           </svg>
-        </a>
+        </a> -->
       </div>
     </div>
     
@@ -117,13 +117,13 @@ try {
     {
       relatedPosts.length > 0 && (
         <div class="mt-12">
-          <h2 class="text-2xl font-bold mb-6">Related Posts</h2>
+          <h2 class="text-2xl font-bold mb-6">Posts Relacionados</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             {relatedPosts.map(post => (
               <a href={`/blog/${post.slug}`} class="block bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition-colors">
                 <h3 class="font-bold mb-2">{post.data.title}</h3>
                 <p class="text-sm text-gray-600 mb-2">By {post.data.author}</p>
-                <p class="text-primary-600 text-sm font-medium">Read More →</p>
+                <p class="text-primary-600 text-sm font-medium">Leer más →</p>
               </a>
             ))}
           </div>
@@ -133,14 +133,11 @@ try {
     
     <!-- Navigation -->
     <div class="mt-12">
-      <a 
-        href="/blog" 
-        class="inline-flex items-center text-primary-600 hover:text-primary-700"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <a href="/blog" class="inline-flex text-pink-600 hover:text-pink-700  items-center">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-        </svg>
-        Back to All Posts
+        </svg> -->
+        Regresar a todos los Post
       </a>
     </div>
   </PostLayout>

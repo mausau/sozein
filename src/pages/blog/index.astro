@@ -3,7 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageHeader from "../../components/Sections/PageHeader.astro";
 import Card from "../../components/UI/Card.astro";
 import { getCollection } from "astro:content";
-import { formatDate } from "../../utils/dateUtils";
+import { formatDate, formatSpanishDate } from "../../utils/dateUtils";
 
 // Get all blog posts
 const allPosts = await getCollection("blog", ({ data }) => {
@@ -21,7 +21,7 @@ const tags = [...new Set(posts.flatMap(post => post.data.tags))];
 
 <BaseLayout
   title="Blog - Sozein"
-  description="Read our latest articles, devotionals, and updates from our church community."
+  description="Puedes leer nuestros últimos articules, devocionales, y actualizaciones de nuestra comunidad."
 >
   <PageHeader 
     title="Blog" 
@@ -132,7 +132,7 @@ const tags = [...new Set(posts.flatMap(post => post.data.tags))];
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
-                  <span>{formatDate(post.data.pubDate)}</span>
+                  <span>{formatSpanishDate(post.data.pubDate)}</span>
                 </div>
                 
                 <div class="mb-3 flex items-center text-gray-600">
@@ -148,7 +148,7 @@ const tags = [...new Set(posts.flatMap(post => post.data.tags))];
                   post.data.tags.length > 0 && (
                     <div class="flex flex-wrap gap-2 mb-4">
                       {post.data.tags.map((tag) => (
-                        <span class="px-2 py-1 text-xs font-medium text-primary-700 bg-primary-100 rounded-full">
+                        <span class="px-2 py-1 text-xs font-medium text-pink-700 bg-pink-100 rounded-full">
                           {tag}
                         </span>
                       ))}
@@ -156,7 +156,7 @@ const tags = [...new Set(posts.flatMap(post => post.data.tags))];
                   )
                 }
                 
-                <a href={`/blog/${post.slug}`} class="text-primary-600 font-medium hover:text-primary-700">
+                <a href={`/blog/${post.slug}`} class="text-pink-600 font-medium hover:text-pink-700">
                   Leer Mas →
                 </a>
               </Card>
