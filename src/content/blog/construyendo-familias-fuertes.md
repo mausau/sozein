@@ -1,14 +1,14 @@
 ---
-title: "Building Strong Families: Biblical Principles for Home Life"
-slug: "building-strong-families"
-pubDate: 2025-01-20
-description: "Explore practical biblical principles that can strengthen family relationships and create a Christ-centered home environment."
-author: "Rev. Sarah Martinez"
+title: "Construyendo Relaciones Familiares Fuertes: Principios Biblicos par la Vida en el Hogar"
+slug: "contruyendo-familias-fuertes"
+pubDate: 2025-07-18
+description: "Explora principios biblicos practicos que pueden fortalecer las relaciones familiares y crear un ambiente en casa Cristo-centrico."
+author: "Pastora. Arely Peña"
 image: {
-  url: "/uploads/blog/building-strong-families.webp",
-  alt: "Happy family reading together"
+  url: "/uploads/blog/construyendo-familias-fuertes.webp",
+  alt: "Familia Feliz Riendo Juntos"
 }
-tags: ["family", "parenting", "relationships"]
+tags: ["familia", "padres", "relaciones"]
 draft: false
 ---
 
