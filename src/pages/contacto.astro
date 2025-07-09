@@ -5,12 +5,12 @@ import Button from "../components/UI/Button.astro";
 ---
 
 <BaseLayout
-  title="Contact Us - Church Name"
-  description="Get in touch with our church. Find our contact information, location, and service times."
+  title="Contáctanos - Sozein"
+  description="Ponte en contacto con nuestra iglesia. Encuentra nuestra informacion de contacto, ubicacion, y horarios de servicio."
 >
   <PageHeader 
-    title="Contact Us" 
-    subtitle="We'd love to hear from you"
+    title="Contáctanos" 
+    subtitle="Nos encantaría escucharte"
     backgroundImage="/uploads/contact-header-bg.webp"
   />
   
@@ -20,11 +20,11 @@ import Button from "../components/UI/Button.astro";
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         <!-- Contact Form -->
         <div>
-          <h2 class="text-3xl font-bold mb-6">Send Us a Message</h2>
+          <h2 class="text-3xl font-bold mb-6">Envíanos un mensaje</h2>
           
           <form id="contact-form" class="space-y-6">
             <div>
-              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
               <input 
                 type="text" 
                 id="name" 
@@ -35,7 +35,7 @@ import Button from "../components/UI/Button.astro";
             </div>
             
             <div>
-              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo electrónico</label>
               <input 
                 type="email" 
                 id="email" 
@@ -46,7 +46,7 @@ import Button from "../components/UI/Button.astro";
             </div>
             
             <div>
-              <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone (optional)</label>
+              <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Teléfono (opcional)</label>
               <input 
                 type="tel" 
                 id="phone" 
@@ -56,25 +56,25 @@ import Button from "../components/UI/Button.astro";
             </div>
             
             <div>
-              <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+              <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Motivo</label>
               <select 
                 id="subject" 
                 name="subject" 
                 required
                 class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary-500 focus:border-primary-500"
               >
-                <option value="">Please select</option>
-                <option value="General Inquiry">General Inquiry</option>
-                <option value="Prayer Request">Prayer Request</option>
-                <option value="Pastoral Care">Pastoral Care</option>
-                <option value="Volunteering">Volunteering</option>
-                <option value="Events">Events</option>
-                <option value="Other">Other</option>
+                <option value="">Selecciona el motivo</option>
+                <option value="General Inquiry">Pregunta general</option>
+                <option value="Prayer Request">Petición de oración</option>
+                <option value="Pastoral Care">Cuidado pastoral</option>
+                <option value="Volunteering">Voluntario</option>
+                <option value="Events">Eventos</option>
+                <option value="Other">Otros</option>
               </select>
             </div>
             
             <div>
-              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
               <textarea 
                 id="message" 
                 name="message" 
@@ -86,7 +86,7 @@ import Button from "../components/UI/Button.astro";
             
             <div>
               <Button type="submit" variant="primary">
-                Send Message
+                Enviar mensaje
               </Button>
             </div>
           </form>
@@ -98,7 +98,7 @@ import Button from "../components/UI/Button.astro";
               
               // In a real implementation, you would handle the form submission here
               // For this template, we'll just show a success message
-              alert('Thank you for your message! We will get back to you soon.');
+              alert('Gracias por tu mensaje! Nos comunicaremos pronto.');
               this.reset();
             });
           </script>
@@ -106,7 +106,7 @@ import Button from "../components/UI/Button.astro";
         
         <!-- Contact Information -->
         <div>
-          <h2 class="text-3xl font-bold mb-6">Contact Information</h2>
+          <h2 class="text-3xl font-bold mb-6">Información de contacto</h2>
           
           <div class="space-y-8">
             <div class="flex items-start">
@@ -119,10 +119,11 @@ import Button from "../components/UI/Button.astro";
                 </div>
               </div>
               <div class="ml-4">
-                <h3 class="text-xl font-bold mb-1">Address</h3>
+                <h3 class="text-xl font-bold mb-1">Dirección</h3>
                 <address class="not-italic text-gray-700">
-                  <p>123 Main Street</p>
-                  <p>Anytown, ST 12345</p>
+                  <p>Boulevard de las Naciones</p>
+                  <p>Plaza Cocos local 32</p>
+                  <p>Acapulco, Guerrero; Mexíco</p>
                 </address>
               </div>
             </div>
@@ -136,9 +137,9 @@ import Button from "../components/UI/Button.astro";
                 </div>
               </div>
               <div class="ml-4">
-                <h3 class="text-xl font-bold mb-1">Phone</h3>
+                <h3 class="text-xl font-bold mb-1">Teléfono</h3>
                 <p class="text-gray-700">
-                  <a href="tel:+15551234567" class="hover:text-primary-600">
+                  <a href="tel:+1" class="hover:text-primary-600">
                     (555) 123-4567
                   </a>
                 </p>
@@ -154,10 +155,10 @@ import Button from "../components/UI/Button.astro";
                 </div>
               </div>
               <div class="ml-4">
-                <h3 class="text-xl font-bold mb-1">Email</h3>
+                <h3 class="text-xl font-bold mb-1">Correo Electrónico</h3>
                 <p class="text-gray-700">
-                  <a href="mailto:info@churchname.org" class="hover:text-primary-600">
-                    info@churchname.org
+                  <a href="mailto:info@sozein.org" class="hover:text-primary-600">
+                    info@sozein.org
                   </a>
                 </p>
               </div>
@@ -172,11 +173,10 @@ import Button from "../components/UI/Button.astro";
                 </div>
               </div>
               <div class="ml-4">
-                <h3 class="text-xl font-bold mb-1">Office Hours</h3>
+                <h3 class="text-xl font-bold mb-1">Horarios de Oficina</h3>
                 <div class="text-gray-700">
-                  <p><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM</p>
-                  <p><strong>Saturday:</strong> 9:00 AM - 1:00 PM</p>
-                  <p><strong>Sunday:</strong> Closed (except for services)</p>
+                  <p><strong>Lunes - Viernes:</strong> 9:00 AM - 5:00 PM</p>
+                  <p><strong>Domingo:</strong> Cerrado (excepto servicios)</p>
                 </div>
               </div>
             </div>
@@ -184,28 +184,28 @@ import Button from "../components/UI/Button.astro";
           
           <!-- Social Media Links -->
           <div class="mt-8">
-            <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+            <h3 class="text-xl font-bold mb-4">Conecta con nosotros</h3>
             <div class="flex space-x-4">
-              <a href="https://facebook.com/yourchurch" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-primary-600 transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=100080321632304&locale=es_LA" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-primary-600 transition-colors">
                 <span class="sr-only">Facebook</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                 </svg>
               </a>
               
-              <a href="https://instagram.com/yourchurch" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-primary-600 transition-colors">
+              <!-- <a href="https://instagram.com/yourchurch" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-primary-600 transition-colors">
                 <span class="sr-only">Instagram</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                 </svg>
-              </a>
+              </a> -->
               
-              <a href="https://youtube.com/yourchurch" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-primary-600 transition-colors">
+              <!-- <a href="https://youtube.com/yourchurch" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-primary-600 transition-colors">
                 <span class="sr-only">YouTube</span>
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                 </svg>
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
@@ -217,9 +217,9 @@ import Button from "../components/UI/Button.astro";
   <section class="py-16 bg-gray-50">
     <div class="container">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Location & Directions</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Ubicación & Direcciones</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          We're easy to find in the heart of Anytown
+          Somos faciles de encontrar en el corazón
         </p>
       </div>
       
@@ -227,43 +227,40 @@ import Button from "../components/UI/Button.astro";
         <div class="bg-gray-200 rounded-lg overflow-hidden h-96">
           <!-- Placeholder for Google Maps iframe -->
           <div class="w-full h-full flex items-center justify-center bg-gray-300">
-            <p class="text-gray-600 text-center p-4">
-              Google Maps embed would go here<br>
-              <span class="text-sm">(For privacy reasons, not included in the template)</span>
-            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.844945906755!2d-99.7823104!3d16.777425700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ca5b891fb7be9d%3A0x8ef6c6745062475b!2sCoco%C2%B4s%20Plaza!5e1!3m2!1ses-419!2smx!4v1752033485092!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
         
         <div>
           <div class="bg-white p-8 rounded-lg shadow-md">
-            <h3 class="text-xl font-bold mb-4">Getting Here</h3>
+            <h3 class="text-xl font-bold mb-4">Como llegar?</h3>
             
             <div class="space-y-6">
               <div>
-                <h4 class="font-bold mb-2">By Car</h4>
+                <h4 class="font-bold mb-2">En carro</h4>
                 <p class="text-gray-700">
-                  We have a large parking lot with plenty of free parking spaces, including accessible parking near the main entrance.
+                  Disponemos de un amplio estacionamiento con numerosas plazas de aparcamiento gratuitas, incluido estacionamiento accesible cerca de la entrada principal.                
                 </p>
               </div>
               
               <div>
-                <h4 class="font-bold mb-2">Public Transportation</h4>
+                <h4 class="font-bold mb-2">Transporte público</h4>
                 <p class="text-gray-700">
-                  Bus lines 10 and 14 stop directly in front of our building. The nearest subway station is Central Station, a 10-minute walk from our church.
+                  Existen taxis colectivos y combis que llegan desde la glorieta de puerto Marqués con dirección al aeropuerto solicitando bajar en plaza cocos
                 </p>
               </div>
               
               <div>
-                <h4 class="font-bold mb-2">Accessibility</h4>
+                <h4 class="font-bold mb-2">Accesibilidad</h4>
                 <p class="text-gray-700">
-                  Our building is fully accessible with ramp access at the main entrance and elevator access to all floors. Accessible restrooms are available on each floor.
+                  Nuestro edificio es totalmente accesible, con rampa en la entrada principal y ascensor a todas las plantas. Disponemos de baños accesibles en cada planta.               
                 </p>
               </div>
             </div>
             
             <div class="mt-6">
-              <Button href="https://maps.google.com/?q=123+Main+Street,+Anytown,+ST+12345" target="_blank" variant="primary">
-                Get Directions
+              <Button href="https://www.google.com/maps/place/Coco%C2%B4s+Plaza/@16.7774308,-99.7871813,840m/data=!3m2!1e3!4b1!4m6!3m5!1s0x85ca5b891fb7be9d:0x8ef6c6745062475b!8m2!3d16.7774257!4d-99.7823104!16s%2Fg%2F11bxf4_nyl?entry=ttu&g_ep=EgoyMDI1MDcwNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" variant="primary">
+                Ver Mapa
               </Button>
             </div>
           </div>
@@ -276,99 +273,99 @@ import Button from "../components/UI/Button.astro";
   <section id="prayer" class="py-16">
     <div class="container">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Ministry Contacts</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Contactos del Ministerio</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Need to reach a specific ministry or staff member? Here's who to contact
+          ¿Necesitas contactar a un ministerio o miembro del personal? Aquí te decimos a quién contactar.        
         </p>
       </div>
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
         <div class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-xl font-bold mb-2">Pastoral Care</h3>
+          <h3 class="text-xl font-bold mb-2">Cuidado Pastoral</h3>
           <p class="text-gray-700 mb-4">
-            For spiritual counseling, hospital visits, or prayer requests
+            Para asesoramiento espiritual, visitas al hospital o solicitudes de oración.          
           </p>
           <div class="flex items-center text-gray-700">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            <a href="mailto:pastor@churchname.org" class="text-primary-600 hover:text-primary-700">
-              pastor@churchname.org
+            <a href="mailto:ramiro_cabrera@sozein.org" class="text-primary-600 hover:text-primary-700">
+              ramiro_cabrera@sozein.org
             </a>
           </div>
         </div>
         
         <div class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-xl font-bold mb-2">Children's Ministry</h3>
+          <h3 class="text-xl font-bold mb-2">Ministerio de niños</h3>
           <p class="text-gray-700 mb-4">
-            For questions about programs for children from birth through 5th grade
+            Para preguntas sobre programas para niños desde el nacimiento hasta sexto grado de primaria.          
           </p>
           <div class="flex items-center text-gray-700">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            <a href="mailto:children@churchname.org" class="text-primary-600 hover:text-primary-700">
-              children@churchname.org
+            <a href="mailto:niños@sozein.org" class="text-primary-600 hover:text-primary-700">
+              niños@sozein.org
             </a>
           </div>
         </div>
         
         <div class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-xl font-bold mb-2">Youth Ministry</h3>
+          <h3 class="text-xl font-bold mb-2">Ministerio de Jóvenes</h3>
           <p class="text-gray-700 mb-4">
-            For questions about programs for students in 6th-12th grade
+            Para preguntas sobre programas para estudiantes de secundaria y preparatoria.          
           </p>
           <div class="flex items-center text-gray-700">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            <a href="mailto:youth@churchname.org" class="text-primary-600 hover:text-primary-700">
-              youth@churchname.org
+            <a href="mailto:jovenes@sozein.org" class="text-primary-600 hover:text-primary-700">
+              jovenes@sozein.org
             </a>
           </div>
         </div>
         
         <div class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-xl font-bold mb-2">Worship Ministry</h3>
+          <h3 class="text-xl font-bold mb-2">Ministerio de alabanza</h3>
           <p class="text-gray-700 mb-4">
-            For information about our music and creative arts ministries
+            Para obtener información sobre nuestros ministerios de música y artes creativas.              
           </p>
           <div class="flex items-center text-gray-700">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            <a href="mailto:worship@churchname.org" class="text-primary-600 hover:text-primary-700">
-              worship@churchname.org
+            <a href="mailto:alabanza@sozein.org" class="text-primary-600 hover:text-primary-700">
+              alabanza@sozein.org
             </a>
           </div>
         </div>
         
         <div class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-xl font-bold mb-2">Outreach & Missions</h3>
+          <h3 class="text-xl font-bold mb-2">Misiones</h3>
           <p class="text-gray-700 mb-4">
-            For information about our local and global mission initiatives
+            Para obtener información sobre nuestras iniciativas de misión local y global          
           </p>
           <div class="flex items-center text-gray-700">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            <a href="mailto:outreach@churchname.org" class="text-primary-600 hover:text-primary-700">
-              outreach@churchname.org
+            <a href="mailto:misiones@sozein.org" class="text-primary-600 hover:text-primary-700">
+              misiones@sozein.org
             </a>
           </div>
         </div>
         
         <div class="bg-white p-6 rounded-lg shadow-sm">
-          <h3 class="text-xl font-bold mb-2">Admin & Facilities</h3>
+          <h3 class="text-xl font-bold mb-2">Administración & Instalaciones</h3>
           <p class="text-gray-700 mb-4">
-            For building use, scheduling, and administrative questions
+            Para preguntas sobre el uso del edificio, programación y administración.          
           </p>
           <div class="flex items-center text-gray-700">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            <a href="mailto:admin@churchname.org" class="text-primary-600 hover:text-primary-700">
-              admin@churchname.org
+            <a href="mailto:admin@sozein.org" class="text-primary-600 hover:text-primary-700">
+              admin@sozein.org
             </a>
           </div>
         </div>
@@ -380,9 +377,9 @@ import Button from "../components/UI/Button.astro";
   <section id="newsletter" class="py-16 bg-primary-50">
     <div class="container">
       <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
+        <h2 class="text-3xl font-bold mb-4">Suscribete a nuestros boletines</h2>
         <p class="text-lg text-gray-700 mb-8">
-          Stay updated with the latest events, announcements, and inspiration from our church community.
+          Manténgase actualizado con los últimos eventos, anuncios e inspiración de nuestra comunidad de la iglesia.        
         </p>
         
         <form id="newsletter-form" class="max-w-md mx-auto">
@@ -390,17 +387,17 @@ import Button from "../components/UI/Button.astro";
             <input 
               type="email" 
               id="newsletter-email" 
-              placeholder="Your email address" 
+              placeholder="Escribe tu correo" 
               required
               class="flex-grow px-4 py-3 border border-gray-300 rounded-md focus:ring-primary-500 focus:border-primary-500"
             />
             
             <Button type="submit" variant="primary">
-              Subscribe
+              Suscribete
             </Button>
           </div>
           <p class="text-sm text-gray-600 mt-3">
-            We respect your privacy. You can unsubscribe at any time.
+            Respetamos tu privacidad. Puedes darte de baja en cualquier momento.          
           </p>
         </form>
         
