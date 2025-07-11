@@ -1,6 +1,6 @@
 ---
 name: "David Wilson"
-title: "Worship Director"
+title: "Worship Directorr"
 image: "/uploads/staff/david-wilson.webp"
 email: "david.wilson@churchname.org"
 phone: "+1-555-0104"

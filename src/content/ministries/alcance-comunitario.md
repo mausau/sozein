@@ -1,6 +1,6 @@
 ---
 name: "Community Outreach Ministry"
-slug: "community-outreach"
+slug: "alcance-comunitario"
 logo: "/uploads/ministries/community-outreach-logo.webp"
 summary: "Serving our local community through practical assistance, food distribution, and programs that demonstrate God's love in action."
 coordinator: "Mark Thompson"

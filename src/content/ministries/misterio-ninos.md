@@ -1,6 +1,6 @@
 ---
-name: "Children's Ministry"
-slug: "childrens-ministry"
+name: "Ministerios de Niños "
+slug: "ministerio-ninos"
 logo: "/uploads/ministries/childrens-ministry-logo.webp"
 summary: "Nurturing children ages 0-12 in their faith journey through engaging, age-appropriate programs that teach God's love."
 coordinator: "Mrs. Jennifer Davis"

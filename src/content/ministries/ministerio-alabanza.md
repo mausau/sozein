@@ -1,6 +1,6 @@
 ---
 name: "Worship Ministry"
-slug: "worship-ministry"
+slug: "ministerio-alabanza"
 logo: "/uploads/ministries/worship-logo.webp"
 summary: "Leading our congregation in Spirit-filled worship through music, song, and creative expression."
 coordinator: "David Wilson"

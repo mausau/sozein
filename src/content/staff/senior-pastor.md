@@ -1,10 +1,10 @@
 ---
-name: "Rev. Dr. John Smith"
-title: "Senior Pastor"
-image: "/uploads/staff/john-smith.webp"
-email: "pastor.john@churchname.org"
-phone: "+1-555-0101"
-bio: "Pastor John has been faithfully serving our congregation for over 12 years, bringing wisdom, compassion, and biblical teaching to our community."
+name: "Pastor Dr. Ramiro Cabrera"
+title: "Pastor Principal"
+image: "/uploads/staff/john-smith.webpp"
+email: "ramiro.cabrera@sozein.org"
+phone: "(744) 341-1118"
+bio: "El pastor Ramiro ha estado sirviendo fielmente a nuestra congregación durante más de 12 años, trayendo sabiduría, compasión y enseñanza bíblica a nuestra comunidad."
 order: 1
 draft: false
 ---
