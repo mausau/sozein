@@ -3,7 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import PostLayout from "../../layouts/PostLayout.astro";
 import Button from "../../components/UI/Button.astro";
 import { getCollection } from "astro:content";
-import { formatDate } from "../../utils/dateUtils";
+import { formatDate, formatSpanishDate } from "../../utils/dateUtils";
 
 // Generate static paths for all events
 export async function getStaticPaths() {
@@ -27,8 +27,8 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 
 // Format the dates for display
-const formattedDate = formatDate(entry.data.date);
-const formattedEndDate = entry.data.endDate ? formatDate(entry.data.endDate) : null;
+const formattedDate = formatSpanishDate(entry.data.date);
+const formattedEndDate = entry.data.endDate ? formatSpanishDate(entry.data.endDate) : null;
 
 // Determine if event is in the future
 const isFutureEvent = new Date(entry.data.date) > new Date();
@@ -52,9 +52,9 @@ const isFutureEvent = new Date(entry.data.date) > new Date();
     <div class="bg-gray-50 rounded-lg p-6 mb-8">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
-          <h3 class="text-lg font-bold mb-2">Date & Time</h3>
+          <h3 class="text-lg font-bold mb-2">Fecha & Hora</h3>
           <div class="flex items-start mb-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 mt-0.5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 mt-0.5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="pink">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
             <div>
@@ -71,9 +71,9 @@ const isFutureEvent = new Date(entry.data.date) > new Date();
         </div>
         
         <div>
-          <h3 class="text-lg font-bold mb-2">Location</h3>
+          <h3 class="text-lg font-bold mb-2">Ubicación</h3>
           <div class="flex items-start">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 mt-0.5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 mt-0.5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="pink">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
@@ -85,16 +85,16 @@ const isFutureEvent = new Date(entry.data.date) > new Date();
       {
         isFutureEvent && entry.data.registrationRequired && (
           <div class="mt-6 pt-6 border-t border-gray-200">
-            <h3 class="text-lg font-bold mb-3">Registration</h3>
-            <p class="mb-4">Registration is required for this event.</p>
+            <h3 class="text-lg font-bold mb-3">Registración</h3>
+            <p class="mb-4">Es necesario registrarse para este evento.</p>
             
             {entry.data.registrationLink ? (
               <Button href={entry.data.registrationLink} target="_blank" variant="primary">
-                Register Now
+                Registrate
               </Button>
             ) : (
-              <Button href="/contact?subject=Event+Registration" variant="primary">
-                Contact Us to Register
+              <Button href="/contacto?subject=Event+Registration" variant="primary">
+                Contactanos para registrate
               </Button>
             )}
           </div>
@@ -112,17 +112,17 @@ const isFutureEvent = new Date(entry.data.date) > new Date();
       {
         isFutureEvent && entry.data.registrationLink && (
           <Button href={entry.data.registrationLink} target="_blank" variant="primary">
-            Register for This Event
+            Regístrese para este evento
           </Button>
         )
       }
       
-      <Button href="/events" variant="outline">
-        Back to All Events
+      <Button href="/eventos" variant="outline">
+        Volver a todos los eventos
       </Button>
       
-      <Button href="/contact?subject=Event+Inquiry" variant="outline">
-        Questions? Contact Us
+      <Button href="/contacto?subject=Evento+Consulta" variant="outline">
+        ¿Preguntas? Contáctanos
       </Button>
     </div>
   </PostLayout>

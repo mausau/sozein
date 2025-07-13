@@ -14,10 +14,10 @@ const ministries = all.sort((a, b) =>
 );
 ---
 
-<BaseLayout title="Our Ministries" description="Discover our ministries.">
+<BaseLayout title="Nuestros Ministerios" description="Descubre nuestros ministerios.">
   <PageHeader
-    title="Our Ministries"
-    subtitle="Ways to connect, grow, and serve"
+    title="Nuestros Ministerios"
+    subtitle="Formas de conectarse, crecer y servir"
     backgroundImage="/uploads/ministries-header-bg.webp"
   />
 
@@ -25,16 +25,16 @@ const ministries = all.sort((a, b) =>
   <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Connect With a Ministry</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Conéctese con un ministerio</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Explore our ministries to grow in faith, connect with community, and serve.
+          Explore nuestros ministerios para crecer en la fe, conectarse con la comunidad y servir.
         </p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {ministries.map(m => (
         <a
-          href={`/ministries/${m.slug}`}
+          href={`/ministerios/${m.slug}`}
           class="
           g-white rounded-lg shadow 
           flex flex-col overflow-hidden 
@@ -102,18 +102,18 @@ const ministries = all.sort((a, b) =>
   >
     <div class="container mx-auto px-4">
       <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Ready to Get Involved?</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">¿Listo para involucrarse?</h2>
         <p class="text-xl mb-8">
-          We believe everyone has been gifted by God to serve in some way. Discover how you can use your unique gifts and passions to make a difference.
+          Creemos que todos hemos recibido el don de Dios para servir de alguna manera. Descubre cómo puedes usar tus dones y pasiones únicos para marcar la diferencia.
         </p>
         <a
-          href="/contact?subject=Volunteering"
+          href="/contacto?subject=Voluntario"
           class="inline-flex items-center justify-center px-5 py-3
-                 text-base font-medium text-white bg-primary-600 rounded-md
-                 shadow-sm hover:bg-primary-700 focus:outline-none
-                 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+                 text-base font-medium text-white bg-pink-600 rounded-md
+                 shadow-sm hover:bg-pink-700 focus:outline-none
+                 focus:ring-2 focus:ring-pink-500 focus:ring-offset-2"
         >
-          Start Volunteering
+          Quiero ser voluntario
         </a>
       </div>
     </div>

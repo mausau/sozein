@@ -1,46 +1,46 @@
 ---
-name: "Worship Ministry"
+name: "Ministerio de Alabanza"
 slug: "ministerio-alabanza"
 logo: "/uploads/ministries/worship-logo.webp"
-summary: "Leading our congregation in Spirit-filled worship through music, song, and creative expression."
-coordinator: "David Wilson"
-contact: "worship@churchname.org"
-schedule: "Rehearsals: Thursday 7:00 PM | Sunday Services: 8:00 AM & 10:30 AM"
+summary: "Liderando nuestra congregación en una adoración llena del Espíritu a través de la música, el canto y la expresión creativa."
+coordinator: "Jesus Erasmo Gallardo"
+contact: "alabanza@sozein.org"
+schedule: "Ensayos: Jueves 19:00 h | Servicios dominicales: 10:30 h y 12:30 h"
 order: 2
 draft: false
 ---
 
-## Our Vision
+## Nuestra Visión
 
-To create an atmosphere of authentic worship where people can encounter God's presence and respond to His love through music and creative expression.
+Crear una atmósfera de adoración auténtica donde las personas puedan encontrar la presencia de Dios y responder a Su amor a través de la música y la expresión creativa.
 
-## Ministry Areas
+## Áreas ministeriales
 
-### Music Teams
-- Vocalists
-- Instrumentalists (piano, guitar, drums, bass, etc.)
-- Sound technicians
-- Visual/projection team
+### Equipos de musica
+- Vocalistas
+- Instrumentistas (piano, guitarra, batería, bajo, etc.)
+- Técnicos de sonido
+- Equipo de proyección visual
 
-### Creative Arts
-- Dance ministry
-- Drama team
-- Visual arts
+### Artes Creativas
+- Ministerio de Danza
+- Equipo de Teatro
+- Artes Visuales
 
-## Getting Involved
+## Participación
 
-We welcome those with musical or technical abilities to join our ministry. Requirements include:
+Invitamos a personas con habilidades musicales o técnicas a unirse a nuestro ministerio. Requisitos:
 
-1. A heart for worship and serving
-2. Regular church attendance
-3. Commitment to rehearsals
-4. Basic musical proficiency (for musicians)
+1. Un corazón para la adoración y el servicio
+2. Asistencia regular a la iglesia
+3. Compromiso con los ensayos
+4. Dominio musical básico (para músicos)
 
-### Training & Development
+### Formación y Desarrollo
 
-- Monthly worship workshops
-- Music theory classes
-- Sound engineering basics
-- Spiritual formation sessions
+- Talleres mensuales de adoración
+- Clases de teoría musical
+- Fundamentos de ingeniería de sonido
+- Sesiones de formación espiritual
 
-Contact our worship coordinator to schedule an audition or learn more about serving opportunities.
+Contacte a nuestro coordinador de adoración para programar una audición o para obtener más información sobre oportunidades de servicio.

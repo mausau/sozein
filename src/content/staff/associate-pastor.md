@@ -4,7 +4,7 @@ title: "Directora del ministerio de muejeres"
 image: "/uploads/staff/sarah-martinez.webpp"
 email: "arely.pena@sozein.org"
 phone: "(744)*** ****"
-bio: "La pastora Sarah dirige nuestro ministerio de mujeres y brinda atención pastoral con un corazón para el discipulado y la construcción de la comunidad.."
+bio: "La pastora Arely dirige nuestro ministerio de mujeres y brinda atención pastoral con un corazón para el discipulado y la construcción de la comunidad.."
 order: 2
 draft: false
 ---

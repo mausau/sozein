@@ -50,8 +50,8 @@ if (entry.data.series) {
 ---
 
 <BaseLayout
-  title={`${entry.data.title} - Sermons - Church Name`}
-  description={entry.data.summary || `Listen to "${entry.data.title}" by ${entry.data.speaker}`}
+  title={`${entry.data.title} - Sermones - Sozien`}
+  description={entry.data.summary || `Escucha "${entry.data.title}" por ${entry.data.speaker}`}
   image={entry.data.image ? { url: entry.data.image, alt: entry.data.title } : undefined}
   type="article"
 >
@@ -69,9 +69,9 @@ if (entry.data.series) {
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <div class="mb-4">
-            <h3 class="text-lg font-bold mb-2">Speaker</h3>
+            <h3 class="text-lg font-bold mb-2">Orador</h3>
             <p class="flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="pink  ">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
               </svg>
               {entry.data.speaker}
@@ -83,7 +83,7 @@ if (entry.data.series) {
               <div class="mb-4">
                 <h3 class="text-lg font-bold mb-2">Series</h3>
                 <p class="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="pink">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                   </svg>
                   {entry.data.series}
@@ -95,9 +95,9 @@ if (entry.data.series) {
         
         <div>
           <div class="mb-4">
-            <h3 class="text-lg font-bold mb-2">Date</h3>
+            <h3 class="text-lg font-bold mb-2">Fecha</h3>
             <p class="flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="pink">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
               {formattedDate}
@@ -107,9 +107,9 @@ if (entry.data.series) {
           {
             entry.data.scripture && (
               <div>
-                <h3 class="text-lg font-bold mb-2">Scripture</h3>
+                <h3 class="text-lg font-bold mb-2">Escritura</h3>
                 <p class="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="pink">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                   </svg>
                   {entry.data.scripture}
@@ -126,7 +126,7 @@ if (entry.data.series) {
       {
         entry.data.videoUrl && (
           <div>
-            <h3 class="text-xl font-bold mb-4">Watch</h3>
+            <h3 class="text-xl font-bold mb-4">Ver</h3>
             <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
               <iframe 
                 src={entry.data.videoUrl} 
@@ -140,17 +140,17 @@ if (entry.data.series) {
         )
       }
       
-      {
+      <!-- {
         entry.data.audioUrl && (
           <div>
-            <h3 class="text-xl font-bold mb-4">Listen</h3>
+            <h3 class="text-xl font-bold mb-4">Escuchar</h3>
             <audio controls class="w-full">
               <source src={entry.data.audioUrl} type="audio/mpeg">
               Your browser does not support the audio element.
             </audio>
           </div>
         )
-      }
+      } -->
     </div>
     
     <!-- Sermon Content -->
@@ -162,13 +162,13 @@ if (entry.data.series) {
     {
       relatedSermons.length > 0 && (
         <div class="mt-12">
-          <h2 class="text-2xl font-bold mb-6">More From This Series</h2>
+          <h2 class="text-2xl font-bold mb-6">Más de esta serie</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             {relatedSermons.map(sermon => (
               <a href={`/sermons/${sermon.slug}`} class="block bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition-colors">
                 <h3 class="font-bold mb-2">{sermon.data.title}</h3>
                 <p class="text-sm text-gray-600 mb-2">{formatDate(sermon.data.date)}</p>
-                <p class="text-primary-600 text-sm font-medium">Listen/Watch →</p>
+                <p class="text-primary-600 text-sm font-medium">Ver →</p>
               </a>
             ))}
           </div>
@@ -178,14 +178,14 @@ if (entry.data.series) {
     
     <!-- Action Buttons -->
     <div class="mt-12 flex flex-wrap gap-4">
-      <Button href="/sermons" variant="outline">
-        Back to All Sermons
+      <Button href="/sermones" variant="outline">
+        Regresar a sermones
       </Button>
       
       {
         entry.data.series && (
-          <Button href={`/sermons?series=${encodeURIComponent(entry.data.series)}`} variant="outline">
-            View All in This Series
+          <Button href={`/sermones?series=${encodeURIComponent(entry.data.series)}`} variant="outline">
+            Ver todos los sermones de esta serie
           </Button>
         )
       }
