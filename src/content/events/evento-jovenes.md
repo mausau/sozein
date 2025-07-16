@@ -25,7 +25,7 @@ Acompáñenos a un fin de semana inolvidable mientras exploramos lo que signific
 ### Qué traer
 
 - Biblia y diario
-- Ropa abrigada de invierno
+- Ropa cómoda
 - Saco de dormir y almohada
 - Artículos de aseo personal
 - Dinero para comprar refrigerios
@@ -34,7 +34,7 @@ Acompáñenos a un fin de semana inolvidable mientras exploramos lo que signific
 
 - Inscripción anticipada (antes del 15 de enero): $175
 - Inscripción regular: $195
-- Becas disponibles: contacte al pastor Michael
+- Becas disponibles: contacte al pastor Ramiro
 
 ### Detalles de la inscripción
 
