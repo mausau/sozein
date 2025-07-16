@@ -23,7 +23,6 @@ const {
 
 // Get the canonical URL
 const canonicalURL = canonicalUrl || new URL(Astro.url.pathname, Astro.site);
-console.log(canonicalURL)
 
 // Get Church address and contact info (would come from site config in a real implementation)
 const churchInfo = {
@@ -39,7 +38,6 @@ const churchInfo = {
   email: "info@sozein.org",
   url: Astro.site?.toString() || "https://sozein.org",
 };
-console.log(Astro.site)
 ---
 
 <!-- Basic SEO -->
