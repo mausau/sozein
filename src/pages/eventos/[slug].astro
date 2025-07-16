@@ -6,6 +6,7 @@ import { getCollection } from "astro:content";
 import { formatDate, formatSpanishDate } from "../../utils/dateUtils";
 
 // Generate static paths for all events
+export const prerender = true;
 export async function getStaticPaths() {
   try {
     const eventEntries = await getCollection("events", ({ data }) => {

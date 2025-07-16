@@ -6,6 +6,7 @@ import { getCollection } from "astro:content";
 import { formatDate } from "../../utils/dateUtils";
 
 // Generate static paths for all sermons
+export const prerender = true;
 export async function getStaticPaths() {
   try {
     const sermonEntries = await getCollection("sermons", ({ data }) => {
