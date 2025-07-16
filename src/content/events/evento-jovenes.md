@@ -2,7 +2,7 @@
 title: "Retiro de Verano para jóvenes 2025: Fe inquebrantable"
 date: 2025-08-14
 endDate: 2025-08-16
-time: "Departure: 4:00 PM Friday | Return: 2:00 PM Sunday"
+time: "Salida: 16:00 hrs viernes | Regreso: 14:00 hrs domingo"
 location: "Plaza comercial la ISLA"
 image: "/uploads/events/community-outreach-day.webp"
 summary: "Un fin de semana transformador de adoración, compañerismo y diversión invernal para estudiantes de 6to Primaria a 3ro de secundaria."
