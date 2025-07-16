@@ -32,7 +32,7 @@ Acompáñenos a un fin de semana inolvidable mientras exploramos lo que signific
 
 ### Costo
 
-- Inscripción anticipada (antes del 15 de enero): $175
+- Inscripción anticipada (antes del 10 de agosto): $175
 - Inscripción regular: $195
 - Becas disponibles: contacte al pastor Ramiro
 
