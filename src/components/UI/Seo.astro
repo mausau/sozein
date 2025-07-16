@@ -23,21 +23,23 @@ const {
 
 // Get the canonical URL
 const canonicalURL = canonicalUrl || new URL(Astro.url.pathname, Astro.site);
+console.log(canonicalURL)
 
 // Get Church address and contact info (would come from site config in a real implementation)
 const churchInfo = {
   name: "Sozein Ministerios Ebenezer",
   address: {
-    streetAddress: "123 Main Street",
-    addressLocality: "Anytown",
-    addressRegion: "ST",
-    postalCode: "12345",
-    addressCountry: "US",
+    streetAddress: "Boulevard de las Naciones",
+    addressLocality: "Acapulco",
+    addressRegion: "Guerrero",
+    postalCode: "39897",
+    addressCountry: "MX",
   },
-  telephone: "+1-555-123-4567",
-  email: "info@churchname.org",
-  url: Astro.site?.toString() || "https://example.com",
+  telephone: "744 341-1118",
+  email: "info@sozein.org",
+  url: Astro.site?.toString() || "https://sozein.org",
 };
+console.log(Astro.site)
 ---
 
 <!-- Basic SEO -->
